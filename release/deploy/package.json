@@ -1,0 +1,28 @@
+{
+  "name": "express-gatsby-static",
+  "version": "1.0.0",
+  "description": "A Wiki Knowledgebase for INSTAR Deutschland GmbH Products - using Express.js with React.js and Gatsby SSR",
+  "main": "wiki_en_ssr.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node ./wiki_en_ssr.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Gatsby, React, Elasticsearch, Express"
+  ],
+  "author": "Mike Polinowksi",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "ejs": "^2.6.1",
+    "elasticsearch": "^15.2.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  }
+}

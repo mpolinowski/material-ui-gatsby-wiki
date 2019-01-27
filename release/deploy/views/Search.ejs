@@ -1,0 +1,29 @@
+<% include _partials/_head.ejs %>
+
+<body>
+  
+  <% include _partials/_ifie10.ejs %>
+
+  <header>
+    <% include _partials/_navheader.ejs %>
+  </header>
+
+  <section>
+
+    <div class="flex-nav" style="margin-top: 100px;">
+      <form method="get" action="/Search/Results/" style="margin: 0 auto;">
+        <br>
+        <br>
+        <br>
+        <input type="search" autofocus placeholder="Search Query" name="q" autocomplete="off">
+        <button class="btn btnPrimary" type="submit">Search</button>
+      </form>
+    </div>
+    <!-- /row -->
+
+  </section>
+  <!-- /search -->
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+/public/
+
+/.cache/
+
+/node_modules/
+
+/release/deploy/node_modules/
+/release/deploy/app/*
+
+/_nginxBAK/
+/elasticsearch_de/

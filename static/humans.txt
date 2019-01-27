@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Mike Polinowski -- CTO -- m.polinowski ad instar.com
+
+# GITHUB
+
+    https://github.com/mpolinowski
+
+# TECHNOLOGY COLOPHON
+
+	Node.js/Express.js
+	React.js/Gatsby.js
+    CSS3, HTML5

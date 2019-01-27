@@ -1,0 +1,112 @@
+<% include _partials/_head.ejs %>
+
+<body>
+  
+  <% include _partials/_ifie10.ejs %>
+
+  <header>
+    <% include _partials/_navheader.ejs %>
+  </header>
+
+  <section>
+
+      <% if (response.hits.total > 0) { %>
+          <% for(var i=0; i<response.hits.hits.length;i++){ if (i === 8) { break; } %>
+          <div class="flex-container shadow">
+              <div class="flex-media">
+                <a href="<%= response.hits.hits[i]._source.sublink1 %>">
+                  <img width="150px" height="150px" src="<%= response.hits.hits[i]._source.imagesquare %>" alt="<%= response.hits.hits[i]._source.title %>"></img>
+                </a>
+              </div>
+              <div class="flex-content">
+                <a href="<%= response.hits.hits[i]._source.sublink1 %>">
+                  <h2 class="no-decor"><%= response.hits.hits[i]._source.title %></h2>
+                  <p class="no-decor"><%= response.hits.hits[i]._source.abstract %></p>
+                </a>
+              </div>
+            </a>
+          </div>
+          <% } %>
+
+      <% } else { %>
+        <div class="flex-container shadow">
+            <div class="flex-media">
+              <a href="/Quick_Installation/">
+                <img width="150px" height="150px" src="/images/Search/TOC_Icons/Wiki_Tiles_QI-Overview_white.png" alt="INSTAR Quick Installation Guides"></img>
+              </a>
+            </div>
+            <div class="flex-content">
+              <a href="/Quick_Installation/">
+                <h2 class="no-decor">Quick Installation</h2>
+                <p class="no-decor">Install your INSTAR camera with ease - read this guide for more information on the process.</p>
+              </a>
+            </div>
+          </a>
+        </div>
+        <div class="flex-container shadow">
+            <div class="flex-media">
+              <a href="/Internet_Access/">
+                <img width="150px" height="150px" src="/images/Search/TOC_Icons/Wiki_Tiles_IA-Overview_white.png" alt="Access your INSTAR Camera over the Internet"></img>
+              </a>
+            </div>
+            <div class="flex-content">
+              <a href="/Internet_Access/">
+                <h2 class="no-decor">Internet Access</h2>
+                <p class="no-decor">All INSTAR cameras can be accessed from the internet - click here to learn more about DDNS, P2P &amp;
+                  Co.</p>
+              </a>
+            </div>
+          </a>
+        </div>
+        <div class="flex-container shadow">
+            <div class="flex-media">
+              <a href="/Motion_Detection/">
+                <img width="150px" height="150px" src="/images/Search/TOC_Icons/Wiki_Tiles_MD-Overview_white.png" alt="Motion Detection"></img>
+              </a>
+            </div>
+            <div class="flex-content">
+              <a href="/Motion_Detection/">
+                <h2 class="no-decor">Motion Detection</h2>
+                <p class="no-decor">Use your INSTAR camera to notify you, whenever someone enters the surveillance areas!</p>
+              </a>
+            </div>
+          </a>
+        </div>
+        <div class="flex-container shadow">
+            <div class="flex-media">
+              <a href="/Advanced_User/">
+                <img width="150px" height="150px" src="/images/Search/TOC_Icons/Wiki_Tiles_AU-Overview_white.png" alt="Advanced Users"></img>
+              </a>
+            </div>
+            <div class="flex-content">
+              <a href="/Advanced_User/">
+                <h2 class="no-decor">Advanced Users</h2>
+                <p class="no-decor">IP cameras are small computers that can be tinkered with. Advanced users, programmers... read on!</p>
+              </a>
+            </div>
+          </a>
+        </div>
+        <div class="flex-container shadow">
+            <div class="flex-media">
+              <a href="/Products/">
+                <img width="150px" height="150px" src="/images/Search/TOC_Icons/Wiki_Tiles_P-Outdoor_white.png" alt="INSTAR Product Portfolio"></img>
+              </a>
+            </div>
+            <div class="flex-content">
+              <a href="/Products/">
+                <h2 class="no-decor">Products</h2>
+                <p class="no-decor">Get all Information about INSTAR Products. Downloads, Technical Specifications and more.</p>
+              </a>
+            </div>
+          </a>
+        </div>
+        <% } %>
+
+      </div>
+      <!-- /Row -->
+    </section>
+    <!-- /Section -->
+
+  </body>
+
+</html>

@@ -1,0 +1,12 @@
+Sitemap: http://wiki.instar.com/sitemap.xml
+
+# Allow crawling of all content
+User-agent: *
+Disallow: /Search
+
+# Disallow crawling of all content
+# User-agent: *
+# Disallow: /
+
+User-agent: ia_archiver
+Allow: /*&action=raw

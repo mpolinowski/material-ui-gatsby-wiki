@@ -1,0 +1,149 @@
+<style>
+  body {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  }
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 1em;
+    margin: 1em 5em;
+    max-width: 1000px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .flex-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 7px;
+    padding:2px;
+  }
+
+  .flex-media img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .flex-content a:link {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: #333;
+  }
+
+  @media all and (max-width: 800px) {
+    .flex-container {
+      padding: 0.2em;
+      margin: 1.5em 0.2em;
+    }
+  }
+
+  @media all and (max-width: 700px) {
+    .flex-media {
+      display: none;
+    }
+  }
+
+  @media all and (min-width: 600px) {
+    .flex-content {
+      flex: 1 0px;
+    }
+  }
+
+.flex-nav {
+	display: flex;
+  margin-bottom: 50px;
+}
+
+.flex-nav button {
+  margin-right: 15px;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  min-width: 88px;
+  box-sizing: border-box;
+  min-height: 36px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  line-height: 0.1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  border-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  outline: none;
+  user-select: none;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media all and (max-width: 855px) {
+  .flex-nav button {
+    display: none;
+  }
+}
+
+.flex-nav button a:link {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  margin-top: 0;
+  padding: 0;
+  color: #444444;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+  
+.logo img {
+    max-height: 50px;
+    max-width: 150px;
+    margin: 0 25px 5px 10px;
+  }
+
+  .shadow {
+    box-shadow: 2px 2px 1px #e1e1e1
+  }
+
+  .bevel {
+    border-top-style: outset;
+    border-color: #eee;
+    border-top-width: thin
+  }
+
+  .text-muted {
+    color: #CECECE;
+    fontsize: 10px;
+  }
+
+  .mobile-down {
+    display: none;
+    visibility: hidden
+  }
+
+  @media only screen and (max-width:956px) {
+    .mobile-down {
+      display: block;
+      visibility: visible
+    }
+  }
+
+  .desktop-up {
+    display: none;
+    visibility: hidden
+  }
+
+  @media only screen and (min-width:957px) {
+    .desktop-up {
+      display: block;
+      visibility: visible
+    }
+  }
+</style>
